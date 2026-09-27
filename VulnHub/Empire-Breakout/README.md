@@ -69,9 +69,6 @@ The scan identified several interesting services:
 
 These services provided several possible enumeration paths.
 
-### Screenshot
-
-![Nmap Scan](screenshots/01-nmap.png)
 
 ---
 
@@ -87,9 +84,7 @@ The scan did not reveal an obvious application or useful hidden directory.
 
 However, the HTTP service itself became interesting during manual inspection.
 
-### Screenshot
 
-![Dirb Scan](screenshots/02-dirb.png)
 
 ---
 
@@ -129,9 +124,7 @@ The important takeaway is that encoding or obfuscation should not be treated as 
 
 Anything delivered to the client can potentially be inspected and recovered.
 
-### Screenshot
 
-![Brainfuck Decoding](screenshots/04-brainfuck-decoded.png)
 
 ---
 
@@ -151,9 +144,6 @@ cyber
 
 This provided the username needed to test the previously recovered credential.
 
-### Screenshot
-
-![enum4linux](screenshots/05-enum4linux.png)
 
 ---
 
@@ -169,9 +159,6 @@ I accessed the Usermin login interface and tested the recovered credentials.
 
 The credentials were accepted, providing an authenticated Usermin session for the `cyber` account.
 
-### Screenshot
-
-![Usermin Login](screenshots/06-usermin-login.png)
 
 ---
 
@@ -198,9 +185,6 @@ I then read the user flag:
 cat user.txt
 ```
 
-### Screenshot
-
-![Usermin Console](screenshots/07-usermin-session.png)
 
 ---
 
@@ -212,11 +196,7 @@ The `user.txt` file contained the user-level flag.
 [FLAG REDACTED]
 ```
 
-### Screenshot
 
-![User Flag](screenshots/08-user-flag.png)
-
----
 
 # 9. Key Findings
 
